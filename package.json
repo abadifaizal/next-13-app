@@ -6,12 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start:local": "next start -p 4004",
+    "analyze": "ANALYZE=true npm run build"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^13.5.3",
+    "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "next": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "eslint": "latest",
